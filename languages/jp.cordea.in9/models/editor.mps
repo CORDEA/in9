@@ -25,6 +25,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -81,6 +82,10 @@
       </node>
       <node concept="2iRfu4" id="VmHkKEh_bP" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="24kQdi" id="VmHkKEh_em">
+    <ref role="1XX52x" to="wttv:VmHkKEh_dQ" resolve="PathContainerConcept" />
+    <node concept="3EYTF0" id="VmHkKEh_en" role="2wV5jI" />
   </node>
 </model>
 
