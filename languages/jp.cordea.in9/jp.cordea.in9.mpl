@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="jp.cordea.in9#01" uuid="989da30d-475d-4232-8073-5b64aa7d6e3b">
+    <generator alias="main" namespace="jp.cordea.in9" uuid="989da30d-475d-4232-8073-5b64aa7d6e3b">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -42,7 +42,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="812e7582-061d-452d-8261-b3d373d2ad95(jp.cordea.in9)" version="0" />
-        <module reference="989da30d-475d-4232-8073-5b64aa7d6e3b(jp.cordea.in9#01)" version="0" />
+        <module reference="989da30d-475d-4232-8073-5b64aa7d6e3b(jp.cordea.in9)" version="0" />
         <module reference="2c92e807-c17d-4d43-8144-71a041075e1e(jp.cordea.in9.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
