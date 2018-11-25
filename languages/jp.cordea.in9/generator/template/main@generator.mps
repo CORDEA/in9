@@ -6,6 +6,7 @@
   </languages>
   <imports>
     <import index="wttv" ref="r:df2ce2f3-ab84-4005-99c0-26138cdb0ae6(jp.cordea.in9.structure)" />
+    <import index="jnd7" ref="r:8dc5ac21-99cd-4d3c-9695-563e9f7ed028(jp.cordea.in9.runtime)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -13,7 +14,9 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -29,6 +32,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -41,8 +47,13 @@
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
+      <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
+      </concept>
+      <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
+        <reference id="1168285871518" name="applicableConcept" index="3gUMe" />
+        <child id="1092060348987" name="contentNode" index="13RCb5" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
@@ -81,6 +92,18 @@
     <node concept="3Tm1VV" id="VmHkKEh_o8" role="1B3o_S" />
     <node concept="n94m4" id="VmHkKEh_o9" role="lGtFl">
       <ref role="n9lRv" to="wttv:VmHkKEh_6J" resolve="UrlConcept" />
+    </node>
+  </node>
+  <node concept="13MO4I" id="VmHkKEhDjT">
+    <property role="TrG5h" value="include_HttpClient" />
+    <ref role="3gUMe" to="wttv:VmHkKEh_dQ" resolve="PathContainerConcept" />
+    <node concept="312cEu" id="VmHkKEhDkb" role="13RCb5">
+      <property role="TrG5h" value="HttpClient" />
+      <node concept="3Tm1VV" id="VmHkKEhDkc" role="1B3o_S" />
+      <node concept="3uibUv" id="VmHkKEhDm2" role="1zkMxy">
+        <ref role="3uigEE" to="jnd7:VmHkKEhB4N" resolve="HttpClientBase" />
+      </node>
+      <node concept="raruj" id="VmHkKEhDmo" role="lGtFl" />
     </node>
   </node>
 </model>
