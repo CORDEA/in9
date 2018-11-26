@@ -67,12 +67,17 @@
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
+        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
+      <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
+      <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
+        <reference id="1722980698497626483" name="template" index="v9R2y" />
+      </concept>
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
@@ -83,6 +88,9 @@
       </concept>
       <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
+      </concept>
+      <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
+        <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
@@ -121,6 +129,18 @@
   </registry>
   <node concept="bUwia" id="VmHkKEhziH">
     <property role="TrG5h" value="main" />
+    <node concept="3aamgX" id="4kOjaQ3guOR" role="3acgRq">
+      <ref role="30HIoZ" to="wttv:VmHkKEh_dQ" resolve="PathContainerConcept" />
+      <node concept="j$656" id="4kOjaQ3gvpS" role="1lVwrX">
+        <ref role="v9R2y" node="VmHkKEhDjT" resolve="include_HttpClient" />
+      </node>
+    </node>
+    <node concept="3aamgX" id="4kOjaQ3gvpW" role="3acgRq">
+      <ref role="30HIoZ" to="wttv:VmHkKEh_ab" resolve="PathConcept" />
+      <node concept="j$656" id="4kOjaQ3gvq6" role="1lVwrX">
+        <ref role="v9R2y" node="4kOjaQ3g1fv" resolve="include_fetch" />
+      </node>
+    </node>
     <node concept="3lhOvk" id="VmHkKEhAiB" role="3lj3bC">
       <ref role="30HIoZ" to="wttv:VmHkKEh_6J" resolve="UrlConcept" />
       <ref role="3lhOvi" node="VmHkKEh_o7" resolve="Main" />
