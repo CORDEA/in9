@@ -110,6 +110,9 @@
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -159,6 +162,23 @@
       <node concept="3cqZAl" id="VmHkKEh_pO" role="3clF45" />
       <node concept="3Tm1VV" id="VmHkKEh_pP" role="1B3o_S" />
       <node concept="3clFbS" id="VmHkKEh_pQ" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="4kOjaQ3gvvK" role="jymVt" />
+    <node concept="2tJIrI" id="4kOjaQ3gvwR" role="jymVt">
+      <node concept="29HgVG" id="4kOjaQ3gvA2" role="lGtFl">
+        <node concept="3NFfHV" id="4kOjaQ3gvB1" role="3NFExx">
+          <node concept="3clFbS" id="4kOjaQ3gvB2" role="2VODD2">
+            <node concept="3clFbF" id="4kOjaQ3gvEy" role="3cqZAp">
+              <node concept="2OqwBi" id="4kOjaQ3gvP4" role="3clFbG">
+                <node concept="30H73N" id="4kOjaQ3gvEx" role="2Oq$k0" />
+                <node concept="3TrEf2" id="4kOjaQ3gw2K" role="2OqNvi">
+                  <ref role="3Tt5mk" to="wttv:VmHkKEh_gk" resolve="container" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3Tm1VV" id="VmHkKEh_o8" role="1B3o_S" />
     <node concept="n94m4" id="VmHkKEh_o9" role="lGtFl">
